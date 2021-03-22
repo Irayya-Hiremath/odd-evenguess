@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin-top: 40px;
+    color:black;
+    font-family: 'Chango', cursive;
+    font-family: 'Staatliches', cursive;
+    /* display: flex; */
+    /* position: absolute;
+    right: auto;
+    justify-content: space-between; */
+   
+}
+#ans{
+    width: 200px;
+    height: 50px;
+    border: black 2px solid;
+    font-size: xx-large;
+
+}
+#ranno{
+    width: 130px;
+    /* border: black 2px solid; */
+    font-size:xx-large;
+    text-align: center;
+    align-items: center;
+    margin-left: 35%;
+    /* border: black 1px solid; */
+    font-size: 150px;
+    /* border-radius: 20px; */
+    text-decoration: none;
+
+    color:red;
+    outline: none;
+    
+
+
+}
+#entans{
+    width: 200px;
+    height: 50px;
+    border: black 1px solid;
+    font-size: xx-large;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: blanchedalmond;
+    color: black;
+    outline: none;
+
+    
+}
+#entans:hover{
+    background-color: black;
+    color: blanchedalmond;
+    box-shadow: antiquewhite;
+}
+#submit{
+    margin-left:40%;
+    margin-top:40px;
+    width: 300px;
+    height: 50px;
+    border: black 1px solid;
+    font-size: xx-large;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: blanchedalmond;
+    color: black;
+    outline: none;
+
+}
+#score{
+    width: 200px;
+    height: 50px;
+    border: black 1px solid;
+    font-size: xx-large;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: blanchedalmond;
+    color: black;
+    outline: none;
+}
+#score:hover{
+    background-color: black;
+    color: blanchedalmond;
+    box-shadow: antiquewhite;
+}
+.rn{
+    margin-top: 20px;
+    margin-left: 35%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+#ans{
+    width: 200px;
+    height: 50px;
+    border: black 1px solid;
+    font-size: xx-large;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: blanchedalmond;
+    color: black;
+    outline: none;
+}
+#ans:hover{
+    background-color: black;
+    color: blanchedalmond;
+    box-shadow: antiquewhite;
+}
+.fl{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    
+}
+h1{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    /* text-align: center; */
+}
+body{
+    background-image: url(cube.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.rn{
+    /* margin-left: 40%; */
+}
+button{
+    height: 50px;
+    border: black 1px solid;
+    font-size: xx-large;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: blanchedalmond;
+    color: black;
+    outline: none;
+    font-family: 'Chango', cursive;
+    font-family: 'Staatliches', cursive;
+}
+button:hover{
+    background-color: black;
+    color: blanchedalmond;
+    box-shadow: antiquewhite;
+}

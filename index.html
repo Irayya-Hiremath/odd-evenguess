@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="odd-even.css">
+    <!-- <script src="fgjs.js"></script> -->
+
+    <title>Odd-Even</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rn">
+            <h1>Random Number</h1>
+            <h1 id="ranno"></h1>
+        </div>
+        <div class="fl">
+
+            <div class="an">
+                <h1>Enter The Ans Its Odd or Even</h1>
+                <input id="entans" type="text" placeholder="Enter ans">
+            </div>
+            <div class="re">
+                <h1>Result</h1>
+                <h1 id="ans"> </h1>
+            </div>
+
+            <div class="sc">
+                <h1>Your Score</h1>
+                <p id="score" placeholder="scores">Score</p>
+            </div>
+        </div>
+        <button id="submit">SUBMIT THE ANS</button>
+
+    </div>
+    <script>
+        let a=document.getElementById('ans');
+        let r=document.getElementById("ranno");
+        let y=r.innerHTML=Math.floor(Math.random()*100)+1;
+        let z=document.getElementById("submit");
+        let e=document.getElementById('entans');
+        let s=document.getElementById("score");
+
+        function oe(){ 
+            if (y%2==0) 
+                return "even";
+            return "odd";
+
+            }
+            function ran(){
+                y=r.innerHTML=Math.floor(Math.random()*100)+1;       
+            } 
+        let k=0; 
+        function sc(val){
+            if (val=='correct'){
+                s.innerHTML=++k;
+            }
+            else{
+                s.innerHTML=--k;
+
+            }
+
+        }
+
+        function check(){
+
+            let guess=e.value;
+            let val=(guess==oe()) ? 'correct':'wrong';
+            sc(val)
+            a.innerHTML=val;
+            ran()
+
+        }
+
+        z.addEventListener('click',check);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
