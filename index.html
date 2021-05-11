@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="odd-even.css">
-    <!-- <script src="fgjs.js"></script> -->
+    <link rel="stylesheet" href="styles.css">
 
     <title>Odd-Even</title>
 
@@ -41,53 +40,8 @@
         <button id="submit">SUBMIT THE ANS</button>
 
     </div>
-    <script>
-        let a=document.getElementById('ans');
-        let r=document.getElementById("ranno");
-        let y=r.innerHTML=Math.floor(Math.random()*100)+1;
-        let z=document.getElementById("submit");
-        let e=document.getElementById('entans');
-        let s=document.getElementById("score");
-
-        function oe(){ 
-            if (y%2==0) 
-                return "even";
-            return "odd";
-
-            }
-            function ran(){
-                y=r.innerHTML=Math.floor(Math.random()*100)+1;       
-            } 
-        let k=0; 
-        function sc(val){
-            if (val=='correct'){
-                s.innerHTML=++k;
-            }
-            else{
-                s.innerHTML=--k;
-
-            }
-
-        }
-
-        function check(){
-
-            let guess=e.value;
-            let val=(guess==oe()) ? 'correct':'wrong';
-            sc(val)
-            a.innerHTML=val;
-            ran()
-
-        }
-
-        z.addEventListener('click',check);
-
-
-
-
-
-
-    </script>
+    <script src="app.js"></script>
+    
 </body>
 
 </html>

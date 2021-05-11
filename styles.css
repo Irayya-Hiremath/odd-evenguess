@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .container{
     margin-top: 40px;
@@ -128,14 +129,12 @@ h1{
     /* text-align: center; */
 }
 body{
-    background-image: url(cube.jpg);
+    background-image: url(./assets/cube.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
-.rn{
-    /* margin-left: 40%; */
-}
+
 button{
     height: 50px;
     border: black 1px solid;
