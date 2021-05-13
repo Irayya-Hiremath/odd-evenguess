@@ -5,7 +5,7 @@
 }
 .container{
     margin-top: 40px;
-    color:black;
+    /* color:black; */
     font-family: 'Chango', cursive;
     font-family: 'Staatliches', cursive;
     /* display: flex; */
@@ -14,12 +14,26 @@
     justify-content: space-between; */
    
 }
-#ans{
-    width: 200px;
-    height: 50px;
-    border: black 2px solid;
-    font-size: xx-large;
+#an{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 
+}
+.re{
+    width: 15%;
+    height: 200px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 100%;
+    border: black 1px solid;
+    font-size:x-large;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    outline: none;
 }
 #ranno{
     width: 130px;
@@ -94,9 +108,15 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-   
-}
-#ans{
+    border: 2px solid black;
+      -webkit-box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, 5px 5px 15px 5px rgba(0,0,0,0);
+        background: #000000;
+    
+   }
+
+     
+/* #ans{
     width: 200px;
     height: 50px;
     border: black 1px solid;
@@ -106,12 +126,12 @@
     background-color: blanchedalmond;
     color: black;
     outline: none;
-}
-#ans:hover{
+} */
+/* #ans:hover{
     background-color: black;
     color: blanchedalmond;
     box-shadow: antiquewhite;
-}
+} */
 .fl{
     display:flex;
     align-items: center;
@@ -120,12 +140,15 @@
     width: 80%;
     margin-left: 10%;
     margin-top: 30px;
+    border: 2px solid black;
+
     
 }
 h1{
     width: auto;
     height: auto;
     padding: 10px;
+    color: white;
     /* text-align: center; */
 }
 body{
