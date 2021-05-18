@@ -5,48 +5,42 @@
 }
 .container{
     margin-top: 40px;
-    /* color:black; */
     font-family: 'Chango', cursive;
     font-family: 'Staatliches', cursive;
-    /* display: flex; */
-    /* position: absolute;
-    right: auto;
-    justify-content: space-between; */
+    
    
 }
-#an{
-    display: flex;
-    justify-content: center;
+.an{
+    
     align-items: center;
     justify-items: center;
 
+
 }
-.re{
+.resultBox{
+    background-color: rgb(253, 249, 249);
     width: 15%;
     height: 200px;
     position: absolute;
     top: 30px;
     right: 30px;
     border-radius: 100%;
-    border: black 1px solid;
     font-size:x-large;
     overflow: hidden;
     text-decoration: none;
     color: black;
     outline: none;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 #ranno{
     width: 130px;
-    /* border: black 2px solid; */
     font-size:xx-large;
     text-align: center;
     align-items: center;
     margin-left: 35%;
-    /* border: black 1px solid; */
     font-size: 150px;
-    /* border-radius: 20px; */
     text-decoration: none;
-
     color:red;
     outline: none;
     
@@ -56,50 +50,65 @@
 #entans{
     width: 200px;
     height: 50px;
-    border: black 1px solid;
-    font-size: xx-large;
-    border-radius: 20px;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 50px;
     text-decoration: none;
+    border: none;
     background-color: blanchedalmond;
     color: black;
     outline: none;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 
     
 }
 #entans:hover{
-    background-color: black;
+    background-color: rgb(34, 33, 33);
     color: blanchedalmond;
     box-shadow: antiquewhite;
+    border: oldlace 1px solid;
 }
 #submit{
     margin-left:40%;
     margin-top:40px;
     width: 300px;
     height: 50px;
-    border: black 1px solid;
     font-size: xx-large;
     border-radius: 20px;
     text-decoration: none;
     background-color: blanchedalmond;
-    color: black;
+    color: rgb(37, 136, 175);
     outline: none;
-
+}
+#submit:hover{
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    
 }
 #score{
     width: 200px;
     height: 50px;
-    border: black 1px solid;
-    font-size: xx-large;
-    border-radius: 20px;
+text-align: center;
+    font-size: x-large;
+    border-radius: 50px;
     text-decoration: none;
+    border: none;
     background-color: blanchedalmond;
     color: black;
     outline: none;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
 }
 #score:hover{
     background-color: black;
     color: blanchedalmond;
     box-shadow: antiquewhite;
+    background-color: rgb(34, 33, 33);
+    color: blanchedalmond;
+    box-shadow: antiquewhite;
+    border: oldlace 1px solid;
 }
 .rn{
     margin-top: 20px;
@@ -108,30 +117,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 2px solid black;
-      -webkit-box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, 5px 5px 15px 5px rgba(0,0,0,0); 
-        box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, 5px 5px 15px 5px rgba(0,0,0,0);
-        background: #000000;
+    background-color: rgb(253, 249, 249);
     
+    -webkit-box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
    }
 
-     
-/* #ans{
-    width: 200px;
-    height: 50px;
-    border: black 1px solid;
-    font-size: xx-large;
-    border-radius: 20px;
-    text-decoration: none;
-    background-color: blanchedalmond;
-    color: black;
-    outline: none;
-} */
-/* #ans:hover{
-    background-color: black;
-    color: blanchedalmond;
-    box-shadow: antiquewhite;
-} */
 .fl{
     display:flex;
     align-items: center;
@@ -139,8 +130,8 @@
     justify-content: space-evenly;
     width: 80%;
     margin-left: 10%;
-    margin-top: 30px;
-    border: 2px solid black;
+    margin-top: 100px;
+  
 
     
 }
@@ -148,8 +139,8 @@ h1{
     width: auto;
     height: auto;
     padding: 10px;
-    color: white;
-    /* text-align: center; */
+    color: #4B4C4B;
+
 }
 body{
     /* background-image: url(./assets/cube.jpg); */
