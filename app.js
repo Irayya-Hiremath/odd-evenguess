@@ -1,27 +1,27 @@
 
-        let a=document.getElementById('ans');
-        let r=document.getElementById("ranno");
-        let y=r.innerHTML=Math.floor(Math.random()*100)+1;
-        let z=document.getElementById("submit");
-        let e=document.getElementById('entans');
-        let s=document.getElementById("score");
+        let result=document.getElementById('ans');
+        let number=document.getElementById("ranno");
+        let randomNumber=number.innerHTML=Math.floor(Math.random()*100)+1;
+        let submitButton=document.getElementById("submit");
+        let inputAns=document.getElementById('EnterAns');
+        let scoreCard=document.getElementById("score");
 
-        function oe(){ 
-            if (y%2==0) 
+        function checkNumber(){ 
+            if (randomNumber%2==0) 
                 return "even";
             return "odd";
 
             }
-            function ran(){
-                y=r.innerHTML=Math.floor(Math.random()*100)+1;       
+            function genrateRN(){
+                randomNumber=number.innerHTML=Math.floor(Math.random()*100)+1;       
             } 
-        let k=0; 
-        function sc(val){
+        let score=0; 
+        function addScore(val){
             if (val=='correct'){
-                s.innerHTML=++k;
+                scoreCard.innerHTML=++score;
             }
             else{
-                s.innerHTML=--k;
+                scoreCard.innerHTML=--score;
 
             }
 
@@ -29,12 +29,25 @@
 
         function check(){
 
-            let guess=e.value;
-            let val=(guess==oe()) ? 'correct':'wrong';
-            sc(val)
-            a.innerHTML=val;
-            ran()
+            let guess=inputAns.value;
+            let val=(guess==checkNumber()) ? 'correct':'wrong';
+            addScore(val)
+            result.innerHTML=val;
+
+            clearData()
+            genrateRN()
 
         }
+        function clearData(){
+        
+            setTimeout(function(){
 
-        z.addEventListener('click',check);
+                inputAns.value=''
+                result.innerHTML=''
+
+            },2000);
+
+            
+        }
+
+        submitButton.addEventListener('click',check);
